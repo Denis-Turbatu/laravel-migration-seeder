@@ -10,8 +10,9 @@
                 <th scope="col">Azienda</th>
                 <th scope="col">Stazione partenza</th>
                 <th scope="col">Stazione arrivo</th>
+                <th scope="col">Data Partenza</th>
                 <th scope="col">Orario partenza</th>
-                <th scope="col">Orario arrivo</th>
+                <th scope="col">Orario arrivo</th> 
                 <th scope="col">Codice Treno</th>
                 <th scope="col">Numero Carrozze</th>
                 <th scope="col">Numero Posti</th>
@@ -29,12 +30,13 @@
                     <td>{{$train->company}}</td>
                     <td>{{$train->departure_station}}</td>
                     <td>{{$train->arrival_station}}</td>
+                    <td>{{$train->departure_date}}</td>
                     <td>{{$train->departure_time}}</td>
                     <td>{{$train->arrival_time}}</td>
                     <td>{{$train->train_code}}</td>
                     <td>{{$train->carriage_number}}</td>
                     <td>{{$train->seats_number}}</td>
-                    <td>{{$train->price_ticket}}</td>
+                    <td>{{$train->price_ticket}}€</td>
                     <td>{{ $train->on_time === 1 ? 'Sì' : 'No' }}</td>
                     <td>{{ $train->cancelled === 1 ? 'Sì' : 'No' }}</td>
                 </tr>
